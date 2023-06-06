@@ -5,7 +5,7 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "Connector_Generic:Conn_02x10_Odd_Even" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+    (symbol "dresco:Conn_02x10_Odd_Even" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 1.27 12.7 0)
         (effects (font (size 1.27 1.27)))
       )
@@ -194,7 +194,7 @@
         )
       )
     )
-    (symbol "Device:D" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+    (symbol "dresco:D" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "D" (id 0) (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
       )
@@ -255,7 +255,27 @@
         )
       )
     )
-    (symbol "Switch:SW_Push" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+    (symbol "dresco:HOLE" (pin_numbers hide) (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "H" (id 0) (at -1.016 -4.445 0)
+        (effects (font (size 1.016 1.016)) (justify left))
+      )
+      (property "Value" "HOLE" (id 1) (at 0 4.318 0)
+        (effects (font (size 0.762 0.762)) hide)
+      )
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 1.524 1.524)))
+      )
+      (property "Datasheet" "" (id 3) (at 0 0 0)
+        (effects (font (size 1.524 1.524)))
+      )
+      (symbol "HOLE_0_1"
+        (circle (center 0 0) (radius 2.54)
+          (stroke (width 1.524) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+      )
+    )
+    (symbol "dresco:SW_Push" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "SW" (id 0) (at 1.27 2.54 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -306,26 +326,6 @@
         (pin passive line (at 5.08 0 180) (length 2.54)
           (name "2" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "dresco:HOLE" (pin_numbers hide) (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "H" (id 0) (at -1.016 -4.445 0)
-        (effects (font (size 1.016 1.016)) (justify left))
-      )
-      (property "Value" "HOLE" (id 1) (at 0 4.318 0)
-        (effects (font (size 0.762 0.762)) hide)
-      )
-      (property "Footprint" "" (id 2) (at 0 0 0)
-        (effects (font (size 1.524 1.524)))
-      )
-      (property "Datasheet" "" (id 3) (at 0 0 0)
-        (effects (font (size 1.524 1.524)))
-      )
-      (symbol "HOLE_0_1"
-        (circle (center 0 0) (radius 2.54)
-          (stroke (width 1.524) (type default) (color 0 0 0 0))
-          (fill (type none))
         )
       )
     )
@@ -1786,7 +1786,7 @@
     )
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 52.07 46.99 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 52.07 46.99 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc10)
     (property "Reference" "SW1" (id 0) (at 52.324 41.91 0)
@@ -1803,7 +1803,7 @@
     (pin "2" (uuid 92125758-6d25-4687-9662-3ee0a7b63316))
   )
 
-  (symbol (lib_id "Device:D") (at 60.96 46.99 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 60.96 46.99 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc11)
     (property "Reference" "D1" (id 0) (at 60.706 41.91 0)
@@ -1820,7 +1820,7 @@
     (pin "2" (uuid da17c98c-6933-41fb-a89f-c1fa54da8e46))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 71.12 46.99 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 71.12 46.99 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc12)
     (property "Reference" "SW2" (id 0) (at 71.374 41.91 0)
@@ -1837,7 +1837,7 @@
     (pin "2" (uuid 394bf056-4fcd-4bef-83a8-b9e06612d122))
   )
 
-  (symbol (lib_id "Device:D") (at 80.01 46.99 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 80.01 46.99 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc13)
     (property "Reference" "D2" (id 0) (at 79.756 41.91 0)
@@ -1854,7 +1854,7 @@
     (pin "2" (uuid 3a5b9a2c-8a61-4fb4-950d-2019a00cb66e))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 90.17 46.99 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 90.17 46.99 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc14)
     (property "Reference" "SW3" (id 0) (at 90.424 41.91 0)
@@ -1871,7 +1871,7 @@
     (pin "2" (uuid 9a458650-0bcb-4412-a227-64373438204a))
   )
 
-  (symbol (lib_id "Device:D") (at 99.06 46.99 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 99.06 46.99 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc15)
     (property "Reference" "D3" (id 0) (at 98.806 41.91 0)
@@ -1888,7 +1888,7 @@
     (pin "2" (uuid 77ebc2e5-1f0f-4872-92a7-5d8ca6e9d738))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 109.22 46.99 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 109.22 46.99 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc16)
     (property "Reference" "SW4" (id 0) (at 109.474 41.91 0)
@@ -1905,7 +1905,7 @@
     (pin "2" (uuid 4684bd5c-d6ff-4a61-939e-8734e6c74c3a))
   )
 
-  (symbol (lib_id "Device:D") (at 118.11 46.99 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 118.11 46.99 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc17)
     (property "Reference" "D4" (id 0) (at 117.856 41.91 0)
@@ -1922,7 +1922,7 @@
     (pin "2" (uuid 0a6f4f59-7e9f-438c-99e5-e07d43318337))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 128.27 46.99 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 128.27 46.99 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc18)
     (property "Reference" "SW5" (id 0) (at 128.524 41.91 0)
@@ -1939,7 +1939,7 @@
     (pin "2" (uuid 5c1af89e-9217-40c2-9e2e-d6deb8e39e5e))
   )
 
-  (symbol (lib_id "Device:D") (at 137.16 46.99 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 137.16 46.99 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc19)
     (property "Reference" "D5" (id 0) (at 136.906 41.91 0)
@@ -1956,7 +1956,7 @@
     (pin "2" (uuid 4aaae322-af46-403e-a193-1b7a15f13f7f))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 147.32 46.99 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 147.32 46.99 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc1a)
     (property "Reference" "SW6" (id 0) (at 147.574 41.91 0)
@@ -1973,7 +1973,7 @@
     (pin "2" (uuid ac0bf3aa-43ac-4807-9671-687abc4cb1db))
   )
 
-  (symbol (lib_id "Device:D") (at 156.21 46.99 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 156.21 46.99 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc1b)
     (property "Reference" "D6" (id 0) (at 155.956 41.91 0)
@@ -1990,7 +1990,7 @@
     (pin "2" (uuid cd7b8740-1800-406a-b445-983a2858909c))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 166.37 46.99 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 166.37 46.99 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc1c)
     (property "Reference" "SW7" (id 0) (at 166.624 41.91 0)
@@ -2007,7 +2007,7 @@
     (pin "2" (uuid ad5566bc-3ca1-4f5f-adc8-57db32930298))
   )
 
-  (symbol (lib_id "Device:D") (at 175.26 46.99 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 175.26 46.99 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc1d)
     (property "Reference" "D7" (id 0) (at 175.006 41.91 0)
@@ -2024,7 +2024,7 @@
     (pin "2" (uuid 637f36ad-75d3-4f53-9dcb-8974cc6735f7))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 185.42 46.99 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 185.42 46.99 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc1e)
     (property "Reference" "SW8" (id 0) (at 185.674 41.91 0)
@@ -2041,7 +2041,7 @@
     (pin "2" (uuid a8d853aa-c31f-40a3-813b-7bd7b2c8d9ae))
   )
 
-  (symbol (lib_id "Device:D") (at 194.31 46.99 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 194.31 46.99 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc1f)
     (property "Reference" "D8" (id 0) (at 194.056 41.91 0)
@@ -2058,7 +2058,7 @@
     (pin "2" (uuid f92f69d2-56ab-4917-95be-06b33225bbb8))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 204.47 46.99 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 204.47 46.99 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc20)
     (property "Reference" "SW9" (id 0) (at 204.724 41.91 0)
@@ -2075,7 +2075,7 @@
     (pin "2" (uuid 9e2dfceb-5e29-4104-9049-5cde0280ee55))
   )
 
-  (symbol (lib_id "Device:D") (at 213.36 46.99 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 213.36 46.99 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc21)
     (property "Reference" "D9" (id 0) (at 213.106 41.91 0)
@@ -2092,7 +2092,7 @@
     (pin "2" (uuid 1a270515-5e04-45fd-b5a5-bd4c5c60ebda))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 223.52 46.99 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 223.52 46.99 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc22)
     (property "Reference" "SW10" (id 0) (at 223.774 41.91 0)
@@ -2109,7 +2109,7 @@
     (pin "2" (uuid fda75549-3e99-4624-8a8c-e1e320892bfa))
   )
 
-  (symbol (lib_id "Device:D") (at 232.41 46.99 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 232.41 46.99 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc23)
     (property "Reference" "D10" (id 0) (at 232.156 41.91 0)
@@ -2126,7 +2126,7 @@
     (pin "2" (uuid 9d03430d-bea5-41e8-90c7-2571c4376646))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 242.57 46.99 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 242.57 46.99 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc24)
     (property "Reference" "SW11" (id 0) (at 242.824 41.91 0)
@@ -2143,7 +2143,7 @@
     (pin "2" (uuid 99b2cdc9-850a-4ee0-be28-fa5c0d4a8b3c))
   )
 
-  (symbol (lib_id "Device:D") (at 251.46 46.99 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 251.46 46.99 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc25)
     (property "Reference" "D11" (id 0) (at 251.206 41.91 0)
@@ -2160,7 +2160,7 @@
     (pin "2" (uuid d48710f1-82dd-47fc-aeec-40463dcd18ed))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 52.07 59.69 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 52.07 59.69 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc26)
     (property "Reference" "SW12" (id 0) (at 52.324 54.61 0)
@@ -2177,7 +2177,7 @@
     (pin "2" (uuid f79355d6-ac01-455f-9653-7343bfee6e40))
   )
 
-  (symbol (lib_id "Device:D") (at 60.96 59.69 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 60.96 59.69 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc27)
     (property "Reference" "D12" (id 0) (at 60.706 54.61 0)
@@ -2194,7 +2194,7 @@
     (pin "2" (uuid c6ac2703-90fa-411e-ae67-0014f2573b21))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 71.12 59.69 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 71.12 59.69 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc28)
     (property "Reference" "SW13" (id 0) (at 71.374 54.61 0)
@@ -2211,7 +2211,7 @@
     (pin "2" (uuid 1d3dc232-6af2-49de-8d34-3c8902a3900c))
   )
 
-  (symbol (lib_id "Device:D") (at 80.01 59.69 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 80.01 59.69 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc29)
     (property "Reference" "D13" (id 0) (at 79.756 54.61 0)
@@ -2228,7 +2228,7 @@
     (pin "2" (uuid 3490b26b-ddcd-4a7b-bc2b-75212be32b9a))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 90.17 59.69 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 90.17 59.69 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc2a)
     (property "Reference" "SW14" (id 0) (at 90.424 54.61 0)
@@ -2245,7 +2245,7 @@
     (pin "2" (uuid 406ca1f7-570d-41d2-a9fb-681fc68f82a6))
   )
 
-  (symbol (lib_id "Device:D") (at 99.06 59.69 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 99.06 59.69 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc2b)
     (property "Reference" "D14" (id 0) (at 98.806 54.61 0)
@@ -2262,7 +2262,7 @@
     (pin "2" (uuid 48486c33-acc9-429c-b2b0-5da85d3f62c6))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 109.22 59.69 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 109.22 59.69 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc2c)
     (property "Reference" "SW15" (id 0) (at 109.474 54.61 0)
@@ -2279,7 +2279,7 @@
     (pin "2" (uuid 2abb28ca-027d-43e0-9099-5a35e98674be))
   )
 
-  (symbol (lib_id "Device:D") (at 118.11 59.69 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 118.11 59.69 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc2d)
     (property "Reference" "D15" (id 0) (at 117.856 54.61 0)
@@ -2296,7 +2296,7 @@
     (pin "2" (uuid d98afb68-1e23-4fef-a599-36918c776c74))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 128.27 59.69 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 128.27 59.69 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc2e)
     (property "Reference" "SW16" (id 0) (at 128.524 54.61 0)
@@ -2313,7 +2313,7 @@
     (pin "2" (uuid ac8d0aa7-2f45-4f1b-9802-2eed4e8afe9f))
   )
 
-  (symbol (lib_id "Device:D") (at 137.16 59.69 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 137.16 59.69 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc2f)
     (property "Reference" "D16" (id 0) (at 136.906 54.61 0)
@@ -2330,7 +2330,7 @@
     (pin "2" (uuid 323a3fba-79d6-4e00-9c04-ed3fef440426))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 147.32 59.69 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 147.32 59.69 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc30)
     (property "Reference" "SW17" (id 0) (at 147.574 54.61 0)
@@ -2347,7 +2347,7 @@
     (pin "2" (uuid ee90c6a1-37b1-4f00-a866-67d1dddce6c8))
   )
 
-  (symbol (lib_id "Device:D") (at 156.21 59.69 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 156.21 59.69 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc31)
     (property "Reference" "D17" (id 0) (at 155.956 54.61 0)
@@ -2364,7 +2364,7 @@
     (pin "2" (uuid 1397cd72-9a26-47b0-bb08-3e572fb6e29d))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 166.37 59.69 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 166.37 59.69 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc32)
     (property "Reference" "SW18" (id 0) (at 166.624 54.61 0)
@@ -2381,7 +2381,7 @@
     (pin "2" (uuid cfce927e-3248-4d81-8247-6fe1704275b0))
   )
 
-  (symbol (lib_id "Device:D") (at 175.26 59.69 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 175.26 59.69 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc33)
     (property "Reference" "D18" (id 0) (at 175.006 54.61 0)
@@ -2398,7 +2398,7 @@
     (pin "2" (uuid 637cb75d-27f7-4a26-b9fa-c7b567613df7))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 185.42 59.69 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 185.42 59.69 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc34)
     (property "Reference" "SW19" (id 0) (at 185.674 54.61 0)
@@ -2415,7 +2415,7 @@
     (pin "2" (uuid 254ec2e7-dcba-41b6-854c-462a1dbcca13))
   )
 
-  (symbol (lib_id "Device:D") (at 194.31 59.69 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 194.31 59.69 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc35)
     (property "Reference" "D19" (id 0) (at 194.056 54.61 0)
@@ -2432,7 +2432,7 @@
     (pin "2" (uuid ab0a82d1-a8c0-4049-a210-71749bf0ec45))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 204.47 59.69 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 204.47 59.69 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc36)
     (property "Reference" "SW20" (id 0) (at 204.724 54.61 0)
@@ -2449,7 +2449,7 @@
     (pin "2" (uuid 6fbcdc22-1ab5-492a-ad89-e298df072cdf))
   )
 
-  (symbol (lib_id "Device:D") (at 213.36 59.69 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 213.36 59.69 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc37)
     (property "Reference" "D20" (id 0) (at 213.106 54.61 0)
@@ -2466,7 +2466,7 @@
     (pin "2" (uuid c919ef13-ce3c-44e0-b5df-014087736e5d))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 223.52 59.69 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 223.52 59.69 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc38)
     (property "Reference" "SW21" (id 0) (at 223.774 54.61 0)
@@ -2483,7 +2483,7 @@
     (pin "2" (uuid 9b3239ef-f5c7-44a7-921f-48ef7e6e8cdd))
   )
 
-  (symbol (lib_id "Device:D") (at 232.41 59.69 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 232.41 59.69 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc39)
     (property "Reference" "D21" (id 0) (at 232.156 54.61 0)
@@ -2500,7 +2500,7 @@
     (pin "2" (uuid 0527ae96-514f-47aa-8501-80f714695937))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 242.57 59.69 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 242.57 59.69 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc3a)
     (property "Reference" "SW22" (id 0) (at 242.824 54.61 0)
@@ -2517,7 +2517,7 @@
     (pin "2" (uuid 75394ad7-3f8f-4fbe-9b5a-9af5550426cb))
   )
 
-  (symbol (lib_id "Device:D") (at 251.46 59.69 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 251.46 59.69 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc3b)
     (property "Reference" "D22" (id 0) (at 251.206 54.61 0)
@@ -2534,7 +2534,7 @@
     (pin "2" (uuid 547f7fcf-17fa-47df-8b9c-118863342c08))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 52.07 72.39 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 52.07 72.39 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc3c)
     (property "Reference" "SW23" (id 0) (at 52.324 67.31 0)
@@ -2551,7 +2551,7 @@
     (pin "2" (uuid 0e96edc7-511c-4807-b902-f127ede6d55a))
   )
 
-  (symbol (lib_id "Device:D") (at 60.96 72.39 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 60.96 72.39 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc3d)
     (property "Reference" "D23" (id 0) (at 60.706 67.31 0)
@@ -2568,7 +2568,7 @@
     (pin "2" (uuid dcc31423-087b-47db-9acb-ace3cc93be20))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 71.12 72.39 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 71.12 72.39 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc3e)
     (property "Reference" "SW24" (id 0) (at 71.374 67.31 0)
@@ -2585,7 +2585,7 @@
     (pin "2" (uuid f97d5837-b750-48a1-9a5f-7f88eef14aa0))
   )
 
-  (symbol (lib_id "Device:D") (at 80.01 72.39 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 80.01 72.39 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc3f)
     (property "Reference" "D24" (id 0) (at 79.756 67.31 0)
@@ -2602,7 +2602,7 @@
     (pin "2" (uuid 98a835a6-2a9b-4a90-9b44-451f01d50d0c))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 90.17 72.39 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 90.17 72.39 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc40)
     (property "Reference" "SW25" (id 0) (at 90.424 67.31 0)
@@ -2619,7 +2619,7 @@
     (pin "2" (uuid b65cdc52-552e-44ff-abfb-ef7c1fb5cb64))
   )
 
-  (symbol (lib_id "Device:D") (at 99.06 72.39 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 99.06 72.39 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc41)
     (property "Reference" "D25" (id 0) (at 98.806 67.31 0)
@@ -2636,7 +2636,7 @@
     (pin "2" (uuid 48c7add4-5c74-4a14-99b8-ca4e336586a5))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 109.22 72.39 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 109.22 72.39 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc42)
     (property "Reference" "SW26" (id 0) (at 109.474 67.31 0)
@@ -2653,7 +2653,7 @@
     (pin "2" (uuid d6527b55-c8c6-4aa7-b6f0-96d4d040e631))
   )
 
-  (symbol (lib_id "Device:D") (at 118.11 72.39 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 118.11 72.39 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc43)
     (property "Reference" "D26" (id 0) (at 117.856 67.31 0)
@@ -2670,7 +2670,7 @@
     (pin "2" (uuid 78101f60-e2e5-458c-ba88-b0670f8784ea))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 128.27 72.39 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 128.27 72.39 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc44)
     (property "Reference" "SW27" (id 0) (at 128.524 67.31 0)
@@ -2687,7 +2687,7 @@
     (pin "2" (uuid fafeafcb-685f-41f2-bbe7-a18250d8fbe4))
   )
 
-  (symbol (lib_id "Device:D") (at 137.16 72.39 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 137.16 72.39 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc45)
     (property "Reference" "D27" (id 0) (at 136.906 67.31 0)
@@ -2704,7 +2704,7 @@
     (pin "2" (uuid 7706cab0-89a9-4600-953d-f68c0d23871a))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 147.32 72.39 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 147.32 72.39 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc46)
     (property "Reference" "SW28" (id 0) (at 147.574 67.31 0)
@@ -2721,7 +2721,7 @@
     (pin "2" (uuid fe69b266-d617-4cb0-8e36-aeb6e2d14354))
   )
 
-  (symbol (lib_id "Device:D") (at 156.21 72.39 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 156.21 72.39 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc47)
     (property "Reference" "D28" (id 0) (at 155.956 67.31 0)
@@ -2738,7 +2738,7 @@
     (pin "2" (uuid 7146d578-75c6-4bed-b1eb-46a48dfd5b1d))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 166.37 72.39 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 166.37 72.39 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc48)
     (property "Reference" "SW29" (id 0) (at 166.624 67.31 0)
@@ -2755,7 +2755,7 @@
     (pin "2" (uuid f2962283-8d92-4dc3-8a08-f6b3cc18df8b))
   )
 
-  (symbol (lib_id "Device:D") (at 175.26 72.39 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 175.26 72.39 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc49)
     (property "Reference" "D29" (id 0) (at 175.006 67.31 0)
@@ -2772,7 +2772,7 @@
     (pin "2" (uuid 2cb2e5a0-b1d2-462e-a083-2723bd853ec4))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 185.42 72.39 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 185.42 72.39 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc4a)
     (property "Reference" "SW30" (id 0) (at 185.674 67.31 0)
@@ -2789,7 +2789,7 @@
     (pin "2" (uuid 43a1e5bc-fbd0-42cd-8fc9-15003774b3b3))
   )
 
-  (symbol (lib_id "Device:D") (at 194.31 72.39 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 194.31 72.39 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc4b)
     (property "Reference" "D30" (id 0) (at 194.056 67.31 0)
@@ -2806,7 +2806,7 @@
     (pin "2" (uuid 8ee23804-ba2e-43bb-a051-a3738fd405c2))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 204.47 72.39 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 204.47 72.39 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc4c)
     (property "Reference" "SW31" (id 0) (at 204.724 67.31 0)
@@ -2823,7 +2823,7 @@
     (pin "2" (uuid 276e7ed4-0e9a-4408-85ec-4a6ea6137f08))
   )
 
-  (symbol (lib_id "Device:D") (at 213.36 72.39 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 213.36 72.39 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc4d)
     (property "Reference" "D31" (id 0) (at 213.106 67.31 0)
@@ -2840,7 +2840,7 @@
     (pin "2" (uuid 4e3e4276-4b1b-43d6-a6e7-cdf37915d79d))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 223.52 72.39 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 223.52 72.39 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc4e)
     (property "Reference" "SW32" (id 0) (at 223.774 67.31 0)
@@ -2857,7 +2857,7 @@
     (pin "2" (uuid cfb328b3-4923-4704-adb6-74466f3b1ca4))
   )
 
-  (symbol (lib_id "Device:D") (at 232.41 72.39 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 232.41 72.39 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc4f)
     (property "Reference" "D32" (id 0) (at 232.156 67.31 0)
@@ -2874,7 +2874,7 @@
     (pin "2" (uuid d5a09c27-1475-4d91-8039-7a48cefd4baa))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 242.57 72.39 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 242.57 72.39 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc50)
     (property "Reference" "SW33" (id 0) (at 242.824 67.31 0)
@@ -2891,7 +2891,7 @@
     (pin "2" (uuid 8a349cc7-8fab-4bec-8325-cecf14310bc5))
   )
 
-  (symbol (lib_id "Device:D") (at 251.46 72.39 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 251.46 72.39 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc51)
     (property "Reference" "D33" (id 0) (at 251.206 67.31 0)
@@ -2908,7 +2908,7 @@
     (pin "2" (uuid 41f1374d-197e-41ac-ac34-998199c5659b))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 52.07 85.09 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 52.07 85.09 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc52)
     (property "Reference" "SW34" (id 0) (at 52.324 80.01 0)
@@ -2925,7 +2925,7 @@
     (pin "2" (uuid 84c5c42f-cc6d-44fa-ba9d-2af9764944be))
   )
 
-  (symbol (lib_id "Device:D") (at 60.96 85.09 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 60.96 85.09 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc53)
     (property "Reference" "D34" (id 0) (at 60.706 80.01 0)
@@ -2942,7 +2942,7 @@
     (pin "2" (uuid 23248dce-24e3-4258-be9b-2c3226426482))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 71.12 85.09 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 71.12 85.09 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc54)
     (property "Reference" "SW35" (id 0) (at 71.374 80.01 0)
@@ -2959,7 +2959,7 @@
     (pin "2" (uuid 441e4560-16e7-4eab-99c1-ed1fd5c702c4))
   )
 
-  (symbol (lib_id "Device:D") (at 80.01 85.09 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 80.01 85.09 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc55)
     (property "Reference" "D35" (id 0) (at 79.756 80.01 0)
@@ -2976,7 +2976,7 @@
     (pin "2" (uuid 7c2c20e4-bc09-4926-b783-17082342babf))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 90.17 85.09 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 90.17 85.09 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc56)
     (property "Reference" "SW36" (id 0) (at 90.424 80.01 0)
@@ -2993,7 +2993,7 @@
     (pin "2" (uuid 3fac7dae-abdd-40be-a5ea-244d3aa94eec))
   )
 
-  (symbol (lib_id "Device:D") (at 99.06 85.09 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 99.06 85.09 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc57)
     (property "Reference" "D36" (id 0) (at 98.806 80.01 0)
@@ -3010,7 +3010,7 @@
     (pin "2" (uuid 180ad52e-2525-45e3-ac39-c09fc6a69aa9))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 109.22 85.09 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 109.22 85.09 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc58)
     (property "Reference" "SW37" (id 0) (at 109.474 80.01 0)
@@ -3027,7 +3027,7 @@
     (pin "2" (uuid 82b192ef-a3d0-439d-ac14-471f59fdc9db))
   )
 
-  (symbol (lib_id "Device:D") (at 118.11 85.09 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 118.11 85.09 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc59)
     (property "Reference" "D37" (id 0) (at 117.856 80.01 0)
@@ -3044,7 +3044,7 @@
     (pin "2" (uuid 027cb513-ec66-4df8-8f63-1c9818c3d36d))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 128.27 85.09 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 128.27 85.09 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc5a)
     (property "Reference" "SW38" (id 0) (at 128.524 80.01 0)
@@ -3061,7 +3061,7 @@
     (pin "2" (uuid d922ea17-f4c9-4aab-8881-906b3a19d50e))
   )
 
-  (symbol (lib_id "Device:D") (at 137.16 85.09 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 137.16 85.09 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc5b)
     (property "Reference" "D38" (id 0) (at 136.906 80.01 0)
@@ -3078,7 +3078,7 @@
     (pin "2" (uuid 7c516d1c-50a2-44a2-8220-4d01906fc98e))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 147.32 85.09 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 147.32 85.09 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc5c)
     (property "Reference" "SW39" (id 0) (at 147.574 80.01 0)
@@ -3095,7 +3095,7 @@
     (pin "2" (uuid de1f754a-d87f-4f5d-9823-f0dbef38b3dd))
   )
 
-  (symbol (lib_id "Device:D") (at 156.21 85.09 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 156.21 85.09 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc5d)
     (property "Reference" "D39" (id 0) (at 155.956 80.01 0)
@@ -3112,7 +3112,7 @@
     (pin "2" (uuid fd19abe8-36a3-4cce-a5ce-55c699b6f0b8))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 166.37 85.09 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 166.37 85.09 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc5e)
     (property "Reference" "SW40" (id 0) (at 166.624 80.01 0)
@@ -3129,7 +3129,7 @@
     (pin "2" (uuid 79e85778-a779-40ec-a2d2-5ff41d414418))
   )
 
-  (symbol (lib_id "Device:D") (at 175.26 85.09 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 175.26 85.09 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc5f)
     (property "Reference" "D40" (id 0) (at 175.006 80.01 0)
@@ -3146,7 +3146,7 @@
     (pin "2" (uuid 9bb175fa-6e43-4e05-b3d1-83769f949e59))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 185.42 85.09 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 185.42 85.09 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc60)
     (property "Reference" "SW41" (id 0) (at 185.674 80.01 0)
@@ -3163,7 +3163,7 @@
     (pin "2" (uuid e32f3b75-caa2-43e6-ae73-a4497241e521))
   )
 
-  (symbol (lib_id "Device:D") (at 194.31 85.09 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 194.31 85.09 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc61)
     (property "Reference" "D41" (id 0) (at 194.056 80.01 0)
@@ -3180,7 +3180,7 @@
     (pin "2" (uuid c871342d-cc4a-4281-9af8-67f58e6b6ece))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 204.47 85.09 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 204.47 85.09 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc62)
     (property "Reference" "SW42" (id 0) (at 204.724 80.01 0)
@@ -3197,7 +3197,7 @@
     (pin "2" (uuid 03d75f45-5ba9-410e-88d9-d431a564018f))
   )
 
-  (symbol (lib_id "Device:D") (at 213.36 85.09 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 213.36 85.09 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc63)
     (property "Reference" "D42" (id 0) (at 213.106 80.01 0)
@@ -3214,7 +3214,7 @@
     (pin "2" (uuid 92d2b252-deec-40e4-8f67-151a30678cff))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 223.52 85.09 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 223.52 85.09 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc64)
     (property "Reference" "SW43" (id 0) (at 223.774 80.01 0)
@@ -3231,7 +3231,7 @@
     (pin "2" (uuid 30f70446-f8fc-40ff-92fb-56eae08fade9))
   )
 
-  (symbol (lib_id "Device:D") (at 232.41 85.09 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 232.41 85.09 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc65)
     (property "Reference" "D43" (id 0) (at 232.156 80.01 0)
@@ -3248,7 +3248,7 @@
     (pin "2" (uuid 93718ab1-d540-4371-bdef-40721b39c1f7))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 242.57 85.09 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 242.57 85.09 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc66)
     (property "Reference" "SW44" (id 0) (at 242.824 80.01 0)
@@ -3265,7 +3265,7 @@
     (pin "2" (uuid ab427ed8-7d35-4d73-a382-090628f61935))
   )
 
-  (symbol (lib_id "Device:D") (at 251.46 85.09 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 251.46 85.09 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc67)
     (property "Reference" "D44" (id 0) (at 251.206 80.01 0)
@@ -3282,7 +3282,7 @@
     (pin "2" (uuid 9c4a1ff8-a62b-4fff-80c0-cac481dcfb1f))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 52.07 97.79 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 52.07 97.79 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc68)
     (property "Reference" "SW45" (id 0) (at 52.324 92.71 0)
@@ -3299,7 +3299,7 @@
     (pin "2" (uuid 446e23e9-e5dd-4223-8a09-7de2acb44fb5))
   )
 
-  (symbol (lib_id "Device:D") (at 60.96 97.79 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 60.96 97.79 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc69)
     (property "Reference" "D45" (id 0) (at 60.706 92.71 0)
@@ -3316,7 +3316,7 @@
     (pin "2" (uuid b85f6e7e-d792-496c-ad82-28250aee6108))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 71.12 97.79 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 71.12 97.79 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc6a)
     (property "Reference" "SW46" (id 0) (at 71.374 92.71 0)
@@ -3333,7 +3333,7 @@
     (pin "2" (uuid 457cd41c-f5d0-4b8e-bd41-ffbc7aa01bc8))
   )
 
-  (symbol (lib_id "Device:D") (at 80.01 97.79 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 80.01 97.79 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc6b)
     (property "Reference" "D46" (id 0) (at 79.756 92.71 0)
@@ -3350,7 +3350,7 @@
     (pin "2" (uuid 0803f714-835c-4009-8d20-b29f6f624121))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 90.17 97.79 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 90.17 97.79 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc6c)
     (property "Reference" "SW47" (id 0) (at 90.424 92.71 0)
@@ -3367,7 +3367,7 @@
     (pin "2" (uuid 68982acb-f86f-4ab9-8624-63012d5de059))
   )
 
-  (symbol (lib_id "Device:D") (at 99.06 97.79 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 99.06 97.79 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc6d)
     (property "Reference" "D47" (id 0) (at 98.806 92.71 0)
@@ -3384,7 +3384,7 @@
     (pin "2" (uuid dff41012-2ca5-46fa-8e52-3b24e923dcd0))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 109.22 97.79 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 109.22 97.79 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc6e)
     (property "Reference" "SW48" (id 0) (at 109.474 92.71 0)
@@ -3401,7 +3401,7 @@
     (pin "2" (uuid 7a3c66fe-af0a-4686-8dbc-2565c40985ee))
   )
 
-  (symbol (lib_id "Device:D") (at 118.11 97.79 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 118.11 97.79 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc6f)
     (property "Reference" "D48" (id 0) (at 117.856 92.71 0)
@@ -3418,7 +3418,7 @@
     (pin "2" (uuid e0a34fc5-993e-40aa-9088-54fe01048738))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 128.27 97.79 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 128.27 97.79 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc70)
     (property "Reference" "SW49" (id 0) (at 128.524 92.71 0)
@@ -3435,7 +3435,7 @@
     (pin "2" (uuid 49314b92-1f8e-48a7-b3b0-ef67f08d7d1f))
   )
 
-  (symbol (lib_id "Device:D") (at 137.16 97.79 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 137.16 97.79 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc71)
     (property "Reference" "D49" (id 0) (at 136.906 92.71 0)
@@ -3452,7 +3452,7 @@
     (pin "2" (uuid 335fcae1-2483-4d16-8c4c-00ca2d597011))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 147.32 97.79 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 147.32 97.79 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc72)
     (property "Reference" "SW50" (id 0) (at 147.574 92.71 0)
@@ -3469,7 +3469,7 @@
     (pin "2" (uuid db19339a-499b-4c80-98e9-9ad76d970d18))
   )
 
-  (symbol (lib_id "Device:D") (at 156.21 97.79 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 156.21 97.79 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc73)
     (property "Reference" "D50" (id 0) (at 155.956 92.71 0)
@@ -3486,7 +3486,7 @@
     (pin "2" (uuid ed45c131-9653-45ae-95f5-0be987dd686b))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 166.37 97.79 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 166.37 97.79 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc74)
     (property "Reference" "SW51" (id 0) (at 166.624 92.71 0)
@@ -3503,7 +3503,7 @@
     (pin "2" (uuid a3fc79d6-0094-4a47-966b-3e6a77ee0d68))
   )
 
-  (symbol (lib_id "Device:D") (at 175.26 97.79 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 175.26 97.79 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc75)
     (property "Reference" "D51" (id 0) (at 175.006 92.71 0)
@@ -3520,7 +3520,7 @@
     (pin "2" (uuid fafaaf9c-782e-46eb-b8b8-ec50999639f9))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 185.42 97.79 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 185.42 97.79 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc76)
     (property "Reference" "SW52" (id 0) (at 185.674 92.71 0)
@@ -3537,7 +3537,7 @@
     (pin "2" (uuid 42e9ebd9-d764-452d-9ee1-66b81f6eec69))
   )
 
-  (symbol (lib_id "Device:D") (at 194.31 97.79 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 194.31 97.79 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc77)
     (property "Reference" "D52" (id 0) (at 194.056 92.71 0)
@@ -3554,7 +3554,7 @@
     (pin "2" (uuid 7eebed3e-b075-4589-8b72-8ebc07c9edc3))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 204.47 97.79 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 204.47 97.79 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc78)
     (property "Reference" "SW53" (id 0) (at 204.724 92.71 0)
@@ -3571,7 +3571,7 @@
     (pin "2" (uuid 228af27e-af75-42e0-91a8-98a3616b945c))
   )
 
-  (symbol (lib_id "Device:D") (at 213.36 97.79 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 213.36 97.79 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc79)
     (property "Reference" "D53" (id 0) (at 213.106 92.71 0)
@@ -3588,7 +3588,7 @@
     (pin "2" (uuid 499ddd12-b834-47e8-a90d-0020d386d9a5))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 223.52 97.79 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 223.52 97.79 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc7a)
     (property "Reference" "SW54" (id 0) (at 223.774 92.71 0)
@@ -3605,7 +3605,7 @@
     (pin "2" (uuid 7aae7bbb-f3b0-417a-a688-21f03cf665fa))
   )
 
-  (symbol (lib_id "Device:D") (at 232.41 97.79 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 232.41 97.79 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc7b)
     (property "Reference" "D54" (id 0) (at 232.156 92.71 0)
@@ -3622,7 +3622,7 @@
     (pin "2" (uuid 86673908-b552-4cdb-8072-f49acba908a7))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 242.57 97.79 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 242.57 97.79 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc7c)
     (property "Reference" "SW55" (id 0) (at 242.824 92.71 0)
@@ -3639,7 +3639,7 @@
     (pin "2" (uuid 981d09c9-fefb-410b-8d8c-52c98abe6bc9))
   )
 
-  (symbol (lib_id "Device:D") (at 251.46 97.79 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 251.46 97.79 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc7d)
     (property "Reference" "D55" (id 0) (at 251.206 92.71 0)
@@ -3656,7 +3656,7 @@
     (pin "2" (uuid 614cdb19-2c65-4827-8b39-3188640573dd))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 52.07 110.49 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 52.07 110.49 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc7e)
     (property "Reference" "SW56" (id 0) (at 52.324 105.41 0)
@@ -3673,7 +3673,7 @@
     (pin "2" (uuid 86a4041e-536c-420b-b653-8770668c6913))
   )
 
-  (symbol (lib_id "Device:D") (at 60.96 110.49 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 60.96 110.49 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc7f)
     (property "Reference" "D56" (id 0) (at 60.706 105.41 0)
@@ -3690,7 +3690,7 @@
     (pin "2" (uuid d01840d4-32a9-4b1b-a1b3-dca2f0c09621))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 71.12 110.49 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 71.12 110.49 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc80)
     (property "Reference" "SW57" (id 0) (at 71.374 105.41 0)
@@ -3707,7 +3707,7 @@
     (pin "2" (uuid b9bbc5a1-bd2a-4110-b886-5f45d3a70da9))
   )
 
-  (symbol (lib_id "Device:D") (at 80.01 110.49 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 80.01 110.49 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc81)
     (property "Reference" "D57" (id 0) (at 79.756 105.41 0)
@@ -3724,7 +3724,7 @@
     (pin "2" (uuid 51d91237-69bd-469b-96dd-3d1f64a686fd))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 90.17 110.49 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 90.17 110.49 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc82)
     (property "Reference" "SW58" (id 0) (at 90.424 105.41 0)
@@ -3741,7 +3741,7 @@
     (pin "2" (uuid 9551ab3e-3f41-44ad-ac87-372d32868b23))
   )
 
-  (symbol (lib_id "Device:D") (at 99.06 110.49 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 99.06 110.49 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc83)
     (property "Reference" "D58" (id 0) (at 98.806 105.41 0)
@@ -3758,7 +3758,7 @@
     (pin "2" (uuid 6afe8c9e-0a90-4f9c-bd33-f71ea3f3b887))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 109.22 110.49 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 109.22 110.49 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc84)
     (property "Reference" "SW59" (id 0) (at 109.474 105.41 0)
@@ -3775,7 +3775,7 @@
     (pin "2" (uuid c0b0b277-3a0d-4b5a-956b-1058988b474e))
   )
 
-  (symbol (lib_id "Device:D") (at 118.11 110.49 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 118.11 110.49 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc85)
     (property "Reference" "D59" (id 0) (at 117.856 105.41 0)
@@ -3792,7 +3792,7 @@
     (pin "2" (uuid 22c0795b-a400-4a1a-a29c-6dcd4749c91a))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 128.27 110.49 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 128.27 110.49 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc86)
     (property "Reference" "SW60" (id 0) (at 128.524 105.41 0)
@@ -3809,7 +3809,7 @@
     (pin "2" (uuid 016a6d1d-b9f2-4ba2-b09d-396f817b890e))
   )
 
-  (symbol (lib_id "Device:D") (at 137.16 110.49 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 137.16 110.49 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc87)
     (property "Reference" "D60" (id 0) (at 136.906 105.41 0)
@@ -3826,7 +3826,7 @@
     (pin "2" (uuid 37d06869-3136-469e-ad4c-a789057f3015))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 147.32 110.49 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 147.32 110.49 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc88)
     (property "Reference" "SW61" (id 0) (at 147.574 105.41 0)
@@ -3843,7 +3843,7 @@
     (pin "2" (uuid 12ae18d0-c37d-46db-9661-fb379f50ccd3))
   )
 
-  (symbol (lib_id "Device:D") (at 156.21 110.49 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 156.21 110.49 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc89)
     (property "Reference" "D61" (id 0) (at 155.956 105.41 0)
@@ -3860,7 +3860,7 @@
     (pin "2" (uuid 3f18470f-fa8c-4ac7-8350-3e51bc9e3edf))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 166.37 110.49 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 166.37 110.49 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc8a)
     (property "Reference" "SW62" (id 0) (at 166.624 105.41 0)
@@ -3877,7 +3877,7 @@
     (pin "2" (uuid f053964b-24b4-4410-8cb9-c69ce7405b6c))
   )
 
-  (symbol (lib_id "Device:D") (at 175.26 110.49 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 175.26 110.49 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc8b)
     (property "Reference" "D62" (id 0) (at 175.006 105.41 0)
@@ -3894,7 +3894,7 @@
     (pin "2" (uuid 247ea6b8-ad43-4b00-ae09-28d5266a16d4))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 185.42 110.49 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 185.42 110.49 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc8c)
     (property "Reference" "SW63" (id 0) (at 185.674 105.41 0)
@@ -3911,7 +3911,7 @@
     (pin "2" (uuid f2a71de0-5ddb-485e-b871-97cbb7e1d23c))
   )
 
-  (symbol (lib_id "Device:D") (at 194.31 110.49 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 194.31 110.49 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc8d)
     (property "Reference" "D63" (id 0) (at 194.056 105.41 0)
@@ -3928,7 +3928,7 @@
     (pin "2" (uuid c8d67e13-7b80-481f-8288-5e48546020b3))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 204.47 110.49 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 204.47 110.49 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc8e)
     (property "Reference" "SW64" (id 0) (at 204.724 105.41 0)
@@ -3945,7 +3945,7 @@
     (pin "2" (uuid 7b469e4d-ae34-4bb0-a137-529b20776b0a))
   )
 
-  (symbol (lib_id "Device:D") (at 213.36 110.49 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 213.36 110.49 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc8f)
     (property "Reference" "D64" (id 0) (at 213.106 105.41 0)
@@ -3962,7 +3962,7 @@
     (pin "2" (uuid 8c70f5fd-8403-4672-b7cc-69b5a13d9506))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 223.52 110.49 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 223.52 110.49 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc90)
     (property "Reference" "SW65" (id 0) (at 223.774 105.41 0)
@@ -3979,7 +3979,7 @@
     (pin "2" (uuid 4db66ed3-6368-48bb-9ddb-9706a7227111))
   )
 
-  (symbol (lib_id "Device:D") (at 232.41 110.49 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 232.41 110.49 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc91)
     (property "Reference" "D65" (id 0) (at 232.156 105.41 0)
@@ -3996,7 +3996,7 @@
     (pin "2" (uuid 4563086a-ba85-4f46-9b36-d9a4f9fdcdf1))
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 242.57 110.49 0) (unit 1)
+  (symbol (lib_id "dresco:SW_Push") (at 242.57 110.49 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc92)
     (property "Reference" "SW66" (id 0) (at 242.824 105.41 0)
@@ -4013,7 +4013,7 @@
     (pin "2" (uuid b4f1c489-f9b8-4f47-963a-6f1455ded0d9))
   )
 
-  (symbol (lib_id "Device:D") (at 251.46 110.49 0) (mirror y) (unit 1)
+  (symbol (lib_id "dresco:D") (at 251.46 110.49 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061cddc93)
     (property "Reference" "D66" (id 0) (at 251.206 105.41 0)
@@ -4030,7 +4030,7 @@
     (pin "2" (uuid 2865aee6-7eec-42f2-ad24-12efec7137fb))
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_02x10_Odd_Even") (at 55.88 166.37 0) (unit 1)
+  (symbol (lib_id "dresco:Conn_02x10_Odd_Even") (at 55.88 166.37 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061d420e4)
     (property "Reference" "J1" (id 0) (at 57.15 150.6982 0))
